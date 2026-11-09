@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Outfit", "Cairo", sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Cairo", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #07090E;
+    color: #F1F5F9;
+  }
+
+  html[dir="rtl"] {
+    font-family: "Cairo", "Plus Jakarta Sans", sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}

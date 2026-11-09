@@ -1,0 +1,6 @@
+{
+  "name": "AI UNIVERSE",
+  "description": "Explore Beyond Earth. An interactive digital planetarium and space exploration platform featuring 3D solar system visualization, planet and galaxy discovery, black hole physics simulation, space quiz, and Gemini AI Space Guide in English and Arabic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
